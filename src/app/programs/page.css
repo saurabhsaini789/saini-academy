@@ -1,0 +1,118 @@
+.programs-hero {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 6rem 1rem 4rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to right, var(--color-primary), #1e3a5f);
+}
+
+.programs-hero .heading-lg {
+    color: var(--color-background);
+}
+
+.programs-nav {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 70px;
+    /* Below header */
+    z-index: 100;
+    background-color: var(--color-surface);
+}
+
+.program-category-header {
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.list-grid {
+    gap: 2rem;
+}
+
+.list-card {
+    background-color: var(--color-background);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+}
+
+.list-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
+}
+
+.list-card.horizontal {
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem;
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.section-subtitle {
+    margin-bottom: 2rem;
+}
+
+.list-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.list-card p {
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.text-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    transition: color var(--transition-fast);
+}
+
+.text-link:hover {
+    color: var(--color-accent);
+}
+
+.gap-y-extra {
+    row-gap: 2rem;
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.bg-dark {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+.text-white {
+    color: var(--color-background) !important;
+}
+
+@media (max-width: 768px) {
+    .programs-nav {
+        display: none;
+        /* Hide on small mobile to save space, or style as scrollable */
+    }
+
+    .list-card.horizontal {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+}

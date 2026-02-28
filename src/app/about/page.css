@@ -1,0 +1,124 @@
+.about-hero {
+    background-color: var(--color-surface);
+    padding: 6rem 1rem 4rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.about-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-heading);
+    font-style: italic;
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.bg-dark {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+.text-white {
+    color: var(--color-background) !important;
+}
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.journey-content p {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.journey-images {
+    position: relative;
+    width: 100%;
+}
+
+.image-wrapper {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.main-img {
+    width: 100%;
+}
+
+.philosophy-grid {
+    margin-top: 3rem;
+}
+
+.philosophy-card {
+    background-color: var(--color-background);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-normal);
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.philosophy-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.philosophy-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.philosophy-card p {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-fast);
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+    .journey-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-images {
+        height: 400px;
+        margin-top: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

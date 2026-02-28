@@ -1,0 +1,229 @@
+.contact-hero {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 6rem 1rem 4rem;
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, #1e3a5f 100%);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-hero .heading-lg {
+    color: var(--color-background);
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+
+.info-desc {
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    align-items: flex-start;
+}
+
+.info-icon {
+    font-size: 1.5rem;
+    background-color: var(--color-background);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+.info-list li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-list li strong {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.info-list li span {
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--color-accent);
+}
+
+/* Form Styles */
+.contact-action {
+    background-color: var(--color-background);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+}
+
+.action-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.tab.active {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.tab.inactive {
+    background-color: var(--color-surface);
+    color: var(--color-text-muted);
+}
+
+.tab.inactive:hover {
+    background-color: #f1f5f9;
+}
+
+.form-container,
+.calendly-container {
+    padding: 3rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    background-color: var(--color-background);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-size: 0.875rem;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.calendly-placeholder {
+    text-align: center;
+    padding: 4rem 2rem;
+    border: 2px dashed var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.calendly-placeholder .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.calendly-placeholder h3 {
+    margin-bottom: 1rem;
+}
+
+.calendly-placeholder p {
+    color: var(--color-text-muted);
+}
+
+.submission-success {
+    padding: 2rem 0;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .form-container,
+    .calendly-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-group.grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

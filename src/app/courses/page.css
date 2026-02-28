@@ -1,0 +1,118 @@
+.courses-hero {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 6rem 1rem 4rem;
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, #0d2240 100%);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.courses-hero .heading-lg {
+    color: var(--color-background);
+}
+
+.course-card {
+    background-color: var(--color-background);
+    padding: 3rem 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform var(--transition-normal);
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.course-card.featured {
+    border: 2px solid var(--color-accent);
+    box-shadow: var(--shadow-md);
+    transform: scale(1.02);
+}
+
+.course-card.featured:hover {
+    transform: scale(1.02) translateY(-8px);
+}
+
+.course-label {
+    display: inline-block;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.accent-label {
+    color: var(--color-accent);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-subtitle {
+    display: block;
+    margin-bottom: 3rem;
+    color: var(--color-text-muted);
+}
+
+.course-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-price {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.course-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+    flex-grow: 1;
+}
+
+.course-features li {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.course-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+@media (max-width: 1024px) {
+    .course-card.featured {
+        transform: none;
+    }
+
+    .course-card.featured:hover {
+        transform: translateY(-8px);
+    }
+}
