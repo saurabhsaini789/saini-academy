@@ -26,7 +26,8 @@ export default function Header() {
                 {/* Desktop Navigation */}
                 <nav className="desktop-nav">
                     <Link href="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
-                    <Link href="/programs" className={`nav-link ${isActive('/programs') ? 'active' : ''}`}>Programs</Link>
+                    <Link href="/journey" className={`nav-link ${isActive('/journey') ? 'active' : ''}`}>My Journey</Link>
+                    <Link href="/programs" className={`nav-link ${isActive('/programs') || pathname?.startsWith('/programs/') ? 'active' : ''}`}>Programs</Link>
                     <Link href="/consulting" className={`nav-link ${isActive('/consulting') ? 'active' : ''}`}>Consulting</Link>
                     <Link href="/courses" className={`nav-link ${isActive('/courses') ? 'active' : ''}`}>Courses</Link>
                     <Link href="/insights" className={`nav-link ${isActive('/insights') ? 'active' : ''}`}>Insights</Link>
@@ -53,15 +54,17 @@ export default function Header() {
 
             {/* Mobile Navigation */}
             <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
-                <div className="container">
-                    <Link href="/about" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>About</Link>
-                    <Link href="/programs" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Programs</Link>
-                    <Link href="/consulting" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Consulting</Link>
-                    <Link href="/courses" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Courses</Link>
-                    <Link href="/insights" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Insights</Link>
-                    <Link href="/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-                    <Link href="/contact" className="btn btn-primary mobile-btn" onClick={() => setIsMenuOpen(false)}>Book a Consultation</Link>
-                </div>
+                <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+                    <Link href="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>About</Link>
+                    <Link href="/journey" className={`nav-link ${isActive('/journey') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>My Journey</Link>
+                    <Link href="/programs" className={`nav-link ${isActive('/programs') || pathname?.startsWith('/programs/') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Programs</Link>
+                    <Link href="/consulting" className={`nav-link ${isActive('/consulting') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Consulting</Link>
+                    <Link href="/courses" className={`nav-link ${isActive('/courses') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Courses</Link>
+                    <Link href="/insights" className={`nav-link ${isActive('/insights') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Insights</Link>
+                    <div className="mobile-cta d-md-none mt-2">
+                        <Link href="/contact" className="btn btn-primary w-full text-center" onClick={() => setIsMenuOpen(false)}>Get in Touch</Link>
+                    </div>
+                </nav>
             </div>
         </header>
     );
