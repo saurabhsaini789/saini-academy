@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TransformationStories from '@/components/TransformationStories';
 import './page.css';
 
 export default function Programs() {
@@ -120,6 +121,9 @@ export default function Programs() {
                     </div>
                 </div>
             </section>
+
+            {/* Transformation Stories Section */}
+            <TransformationStories />
 
             {/* Custom Consulting CTA */}
             <section className="section bg-dark text-center">

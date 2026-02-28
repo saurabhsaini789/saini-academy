@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TransformationStories from '@/components/TransformationStories';
 import './page.css';
 
 export default function Consulting() {
@@ -84,6 +85,9 @@ export default function Consulting() {
                     </div>
                 </div>
             </section>
+
+            {/* Transformation Stories Section */}
+            <TransformationStories />
 
             <section className="section">
                 <div className="container">
