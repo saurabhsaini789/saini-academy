@@ -4,7 +4,6 @@
     padding: 6rem 1rem 4rem;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to right, var(--color-primary), #1e3a5f);
 }
 
 .programs-hero .heading-lg {
@@ -43,7 +42,7 @@
 
 .list-card:hover {
     box-shadow: var(--shadow-md);
-    border-color: var(--color-accent);
+    border-color: var(--color-primary);
 }
 
 .list-card.horizontal {

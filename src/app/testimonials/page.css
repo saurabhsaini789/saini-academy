@@ -2,7 +2,6 @@
     background-color: var(--color-primary);
     color: var(--color-background);
     padding: 6rem 1rem 4rem;
-    background-image: linear-gradient(135deg, var(--color-primary) 0%, #1e3a5f 100%);
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -22,9 +21,9 @@
 }
 
 .testimonial-card-large:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--color-accent);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
 }
 
 .quote-icon {

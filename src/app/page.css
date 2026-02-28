@@ -6,22 +6,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-primary);
-    /* Added a generic mesh gradient or dark professional background */
-    background-image: linear-gradient(135deg, var(--color-primary) 0%, #112d4e 100%);
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     color: var(--color-background);
     text-align: center;
     padding: 4rem 1rem;
     overflow: hidden;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.05"><path d="M0 0h100v100H0z"/></svg>');
-    z-index: 1;
 }
 
 .hero-content {
@@ -56,14 +45,7 @@
     justify-content: center;
 }
 
-/* Animations */
-.delay-1 {
-    animation-delay: 0.2s;
-}
-
-.delay-2 {
-    animation-delay: 0.4s;
-}
+/* Animations Removed */
 
 /* Utilities Specific to Home */
 .section-header {
@@ -195,13 +177,8 @@
 .program-icon {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    background-color: var(--color-surface);
-    width: 60px;
-    height: 60px;
+    color: var(--color-primary);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
 }
 
 .program-title {
@@ -237,7 +214,6 @@
     color: var(--color-background);
     border-radius: var(--radius-lg);
     padding: 4rem;
-    background-image: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(10, 25, 47, 0) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -262,14 +238,13 @@
 }
 
 .testimonial-card::before {
-    content: '""';
+    content: '"';
     position: absolute;
-    top: 1.5rem;
-    left: 2rem;
+    top: 1rem;
+    left: 1.5rem;
     font-family: var(--font-heading);
-    font-size: 5rem;
-    color: var(--color-accent);
-    opacity: 0.2;
+    font-size: 4rem;
+    color: var(--color-border);
     line-height: 1;
 }
 

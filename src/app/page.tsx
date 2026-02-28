@@ -9,13 +9,12 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-overlay"></div>
         <div className="container hero-content">
-          <h1 className="hero-title animate-fade-in">Helping Professionals and Organizations Perform at Their Best</h1>
-          <p className="hero-subtitle animate-fade-in delay-1">
+          <h1 className="hero-title">Helping Professionals and Organizations Perform at Their Best</h1>
+          <p className="hero-subtitle">
             We provide corporate consulting, career programs, and performance training designed to build real-world skills and measurable results.
           </p>
-          <div className="hero-actions animate-fade-in delay-2">
+          <div className="hero-actions">
             <Link href="/consulting" className="btn btn-primary">Book a Consultation</Link>
             <Link href="/programs" className="btn btn-secondary" style={{ borderColor: 'var(--color-background)', color: 'var(--color-background)' }}>Explore Programs</Link>
           </div>
