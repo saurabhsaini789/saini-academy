@@ -154,6 +154,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Vision Short Section */}
+      <section className="section vision-short-section">
+        <div className="container">
+          <div className="vision-short-grid">
+            <div className="vision-short-content">
+              <h2 className="heading-md mb-2">The Future of Performance & Learning</h2>
+              <p className="vision-lead mb-2">The future of learning is performance-driven.</p>
+              <p className="mb-2">
+                Performance & Learning Academy is building a global platform focused on measurable growth, behavior change, and real business outcomes.
+              </p>
+              <p className="mb-3">
+                We partner with organizations and professionals to move beyond training and create lasting performance transformation.
+              </p>
+              <Link href="/consulting" className="btn btn-primary">Explore Our Consulting Approach</Link>
+            </div>
+            <div className="vision-short-visual">
+              <div className="vision-visual-box">
+                <div className="visual-graphic"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="section section-bg-dark text-center">
         <div className="container max-w-md mx-auto">

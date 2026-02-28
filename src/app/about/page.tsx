@@ -158,6 +158,59 @@ export default function About() {
                 </div>
             </section>
 
+            {/* Vision Section */}
+            <section className="section vision-section bg-surface">
+                <div className="container">
+                    <div className="text-center max-w-lg mx-auto mb-4">
+                        <h2 className="heading-md text-primary mb-2">The Future of Performance & Learning</h2>
+                        <p className="text-lg text-primary font-medium mb-2">
+                            The future of learning is not about courses.<br />
+                            It is about performance, adaptability, and measurable growth.
+                        </p>
+                        <p className="text-muted">
+                            Over the next few years, my focus is to build the Performance & Learning Academy into a global platform that helps organizations and professionals move beyond traditional training and create real performance outcomes.
+                        </p>
+                    </div>
+
+                    <div className="vision-grid grid grid-2 mb-4">
+                        <div className="vision-card">
+                            <h3 className="heading-sm mb-2 text-primary">Organizational Impact</h3>
+                            <p className="mb-2 text-muted">I aim to help organizations:</p>
+                            <ul className="vision-list">
+                                <li>Improve employee performance and productivity</li>
+                                <li>Build future-ready skills</li>
+                                <li>Strengthen leadership and sales capability</li>
+                                <li>Align learning with business goals</li>
+                                <li>Create measurable and sustainable results</li>
+                            </ul>
+                        </div>
+                        <div className="vision-card">
+                            <h3 className="heading-sm mb-2 text-primary">Global Expansion</h3>
+                            <p className="mb-2 text-muted">As I expand my work in India and global markets, my vision is to:</p>
+                            <ul className="vision-list">
+                                <li>Partner with organizations to solve real performance challenges</li>
+                                <li>Support startups and growing businesses</li>
+                                <li>Build performance-driven cultures</li>
+                                <li>Offer consulting, coaching, and digital learning</li>
+                                <li>Create scalable performance systems</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="vision-conclusion max-w-lg mx-auto text-center mt-4">
+                        <p className="mb-2 text-primary font-medium text-lg">
+                            I believe the workforce of the future needs more than knowledge. It needs clarity, structure, and the right behavioral systems.
+                        </p>
+                        <p className="mb-2 text-muted">
+                            India has immense talent and potential. With the right performance mindset, individuals and organizations can compete globally.
+                        </p>
+                        <div className="vision-highlight mt-3">
+                            The Performance & Learning Academy is built to bridge the gap between learning and real-world impact.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Philosophy Section */}
             <section className="section bg-dark text-white">
                 <div className="container">

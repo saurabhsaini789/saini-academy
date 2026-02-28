@@ -297,6 +297,48 @@
     color: var(--color-text-muted);
 }
 
+/* Vision Short Section */
+.vision-short-section {
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.vision-short-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.vision-short-content .vision-lead {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.vision-short-visual {
+    position: relative;
+    width: 100%;
+}
+
+.vision-visual-box {
+    background-color: var(--color-background);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.visual-graphic {
+    width: 100%;
+    height: 250px;
+    background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M 30 0 L 0 0 0 30" fill="none" stroke="%23e2e8f0" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/><circle cx="50%" cy="50%" r="60" fill="none" stroke="%23d4af37" stroke-width="4"/><circle cx="50%" cy="50%" r="40" fill="none" stroke="%230a192f" stroke-width="4"/><circle cx="50%" cy="50%" r="20" fill="%23d4af37"/></svg>') center/cover no-repeat;
+    border-radius: var(--radius-md);
+}
+
 /* Responsive Overrides */
 @media (max-width: 900px) {
     .founder-grid {
@@ -335,5 +377,10 @@
 
     .flex-center.gap-2 .btn {
         width: 100%;
+    }
+
+    .vision-short-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 }
