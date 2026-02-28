@@ -131,6 +131,16 @@ button {
   color: var(--color-accent);
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .heading-lg {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
