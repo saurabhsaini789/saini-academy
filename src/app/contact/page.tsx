@@ -101,7 +101,7 @@ export default function Contact() {
                             </ul>
 
                             <div className="social-links mt-3">
-                                <button onClick={() => setIsModalOpen(true)} className="social-btn" aria-label="LinkedIn">in</button>
+                                <a href="https://www.linkedin.com/in/iamsaurabhsaini/" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="LinkedIn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>in</a>
                                 <button onClick={() => setIsModalOpen(true)} className="social-btn" aria-label="Twitter">𝕏</button>
                                 <button onClick={() => setIsModalOpen(true)} className="social-btn" aria-label="YouTube">▶</button>
                             </div>

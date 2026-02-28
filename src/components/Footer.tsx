@@ -43,7 +43,7 @@ export default function Footer() {
                             Helping Professionals and Organizations Perform at Their Best. We provide corporate consulting, career programs, and performance training designed to build real-world skills and measurable results.
                         </p>
                         <div className="footer-social">
-                            <button onClick={() => setIsModalOpen(true)} className="social-link-btn">LinkedIn</button>
+                            <a href="https://www.linkedin.com/in/iamsaurabhsaini/" target="_blank" rel="noopener noreferrer" className="social-link-btn" style={{ textDecoration: 'none', display: 'inline-block', border: 'none', background: 'none', padding: 0, font: 'inherit', cursor: 'pointer' }}>LinkedIn</a>
                             <button onClick={() => setIsModalOpen(true)} className="social-link-btn">𝕏</button>
                             <button onClick={() => setIsModalOpen(true)} className="social-link-btn">YouTube</button>
                         </div>
