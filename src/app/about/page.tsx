@@ -45,6 +45,119 @@ export default function About() {
                 </div>
             </section>
 
+            {/* Timeline Section */}
+            <section className="timeline-section section">
+                <div className="container">
+                    <div className="text-center max-w-md mx-auto mb-4">
+                        <h2 className="heading-md">My Evolution</h2>
+                        <p className="opacity-90">A timeline of relentless growth, learning strategy, and business transformation.</p>
+                    </div>
+                    <div className="timeline">
+
+                        {/* 2018 item */}
+                        <div className="timeline-item">
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-content">
+                                <span className="timeline-date">2018</span>
+                                <h3 className="heading-sm mb-1">Early Foundation</h3>
+                                <div className="timeline-card">
+                                    <p className="mb-2">
+                                        In 2018, I completed my Bachelor of Science. This phase built my analytical thinking and structured problem-solving approach, which later became the foundation of my performance and learning philosophy.
+                                    </p>
+                                    <div className="callout callout-skills">
+                                        <strong>Key Focus:</strong> Analytical thinking, structured logic, scientific problem-solving.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 2020-2021 item */}
+                        <div className="timeline-item reverse">
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-content">
+                                <span className="timeline-date">2020 &ndash; 2021</span>
+                                <h3 className="heading-sm mb-1">Teaching & Coaching Years</h3>
+                                <div className="timeline-card">
+                                    <p className="mb-2">
+                                        In 2020, I completed my Bachelor of Education and began my professional journey as an educator. I taught in Saraswati High School (Chhachhrauli), worked with Chetanya Classes focusing on English communication, and conducted private coaching in my local community.
+                                    </p>
+                                    <p className="mb-2 font-medium italic text-muted">
+                                        This period shaped my belief that learning must be practical, engaging, and outcome-driven.
+                                    </p>
+                                    <div className="callout callout-skills">
+                                        <strong>Skills Developed:</strong> Classroom facilitation, learner psychology, coaching mindset, real-world communication.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 2022 item */}
+                        <div className="timeline-item">
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-content">
+                                <span className="timeline-date">2022</span>
+                                <h3 className="heading-sm mb-1">Transition to Global Learning</h3>
+                                <div className="timeline-card">
+                                    <Image
+                                        src="/saini-academy/images/Speaker-Educator Mode - 1.png"
+                                        alt="Global Journey"
+                                        width={500} height={300}
+                                        className="timeline-image"
+                                    />
+                                    <p className="mt-2 mb-2">
+                                        In January 2022, I moved to Canada and started my E-Learning Design and Training Development program. To gain real-world exposure, I worked in diverse environments including Ashley Furniture HomeStore (sales/customer experience) and FCA (manufacturing/operations).
+                                    </p>
+                                    <p className="mb-2 font-medium italic text-muted">
+                                        This phase transformed my perspective from teaching to business performance and results.
+                                    </p>
+                                    <div className="callout callout-impact">
+                                        <strong>Real-World Discovery:</strong> Customer psychology, operational pressure, global workplace culture, and front-line business realities.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 2023 item */}
+                        <div className="timeline-item reverse">
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-content">
+                                <span className="timeline-date">2023</span>
+                                <h3 className="heading-sm mb-1">Instructional Design & Corporate Learning</h3>
+                                <div className="timeline-card">
+                                    <p className="mb-2">
+                                        In May 2023, I began my internship as an Instructional Designer at The Dufresne Group, transitioning to a full-time role by August. I worked on corporate training programs, sales enablement, and digital learning design to solve real business challenges.
+                                    </p>
+                                    <div className="callout callout-mindset">
+                                        <strong>Mindset Shift:</strong> Moving from traditional education creation to strategic learning and performance consulting.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 2024 item */}
+                        <div className="timeline-item">
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-content">
+                                <span className="timeline-date">2024 &ndash; Present</span>
+                                <h3 className="heading-sm mb-1">Performance & Process Excellence</h3>
+                                <div className="timeline-card">
+                                    <p className="mt-2 mb-2">
+                                        Promoted to expand my responsibilities across Instructional Design and Process Analysis. I now spearhead performance improvement initiatives, business process optimization, and data-driven learning tied to strict corporate outcomes.
+                                    </p>
+                                    <p className="mb-2 font-medium italic" style={{ color: 'var(--color-primary)' }}>
+                                        Learning alone does not create results. Performance, systems, and behavior change do.
+                                    </p>
+                                    <div className="callout callout-skills">
+                                        <strong>Current Focus:</strong> Sales and operational excellence, measurable business impact, human performance architecture.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
             {/* Philosophy Section */}
             <section className="section bg-dark text-white">
                 <div className="container">

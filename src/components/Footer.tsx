@@ -54,7 +54,6 @@ export default function Footer() {
                         <h4 className="footer-heading">Quick Links</h4>
                         <ul className="footer-links">
                             <li><Link href="/about">About the Founder</Link></li>
-                            <li><Link href="/journey">My Journey Timeline</Link></li>
                             <li><Link href="/programs">Our Programs</Link></li>
                             <li><Link href="/consulting">Corporate Consulting</Link></li>
                             <li><Link href="/courses">Online Courses</Link></li>

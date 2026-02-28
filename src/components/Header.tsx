@@ -26,7 +26,6 @@ export default function Header() {
                 {/* Desktop Navigation */}
                 <nav className="desktop-nav">
                     <Link href="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
-                    <Link href="/journey" className={`nav-link ${isActive('/journey') ? 'active' : ''}`}>My Journey</Link>
                     <Link href="/programs" className={`nav-link ${isActive('/programs') || pathname?.startsWith('/programs/') ? 'active' : ''}`}>Programs</Link>
                     <Link href="/consulting" className={`nav-link ${isActive('/consulting') ? 'active' : ''}`}>Consulting</Link>
                     <Link href="/courses" className={`nav-link ${isActive('/courses') ? 'active' : ''}`}>Courses</Link>
@@ -56,7 +55,6 @@ export default function Header() {
             <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
                 <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <Link href="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>About</Link>
-                    <Link href="/journey" className={`nav-link ${isActive('/journey') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>My Journey</Link>
                     <Link href="/programs" className={`nav-link ${isActive('/programs') || pathname?.startsWith('/programs/') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Programs</Link>
                     <Link href="/consulting" className={`nav-link ${isActive('/consulting') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Consulting</Link>
                     <Link href="/courses" className={`nav-link ${isActive('/courses') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Courses</Link>
