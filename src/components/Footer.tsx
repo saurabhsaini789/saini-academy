@@ -12,12 +12,23 @@ export default function Footer() {
     const [isSubscribed, setIsSubscribed] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleSubscribe = (e: React.FormEvent) => {
+    const handleSubscribe = async (e: React.FormEvent) => {
         e.preventDefault();
         if (email) {
-            setIsSubscribed(true);
-            setEmail('');
-            setTimeout(() => setIsSubscribed(false), 5000);
+            try {
+                const response = await fetch('https://formspree.io/f/mvzbnppy', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify({ email, inquiry: 'Newsletter Subscription' })
+                });
+                if (response.ok) {
+                    setIsSubscribed(true);
+                    setEmail('');
+                    setTimeout(() => setIsSubscribed(false), 5000);
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+            }
         }
     };
 

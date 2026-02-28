@@ -1,9 +1,32 @@
 "use client";
 
 import Link from 'next/link';
+import { useState } from 'react';
 import './page.css';
 
 export default function Blog() {
+    const [email, setEmail] = useState('');
+    const [isSubscribed, setIsSubscribed] = useState(false);
+
+    const handleSubscribe = async (e: React.FormEvent) => {
+        e.preventDefault();
+        if (email) {
+            try {
+                const response = await fetch('https://formspree.io/f/mvzbnppy', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify({ email, inquiry: 'Insights Newsletter Subscription' })
+                });
+                if (response.ok) {
+                    setIsSubscribed(true);
+                    setEmail('');
+                    setTimeout(() => setIsSubscribed(false), 5000);
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+            }
+        }
+    };
     const posts = [
         {
             title: "The Psychology of Corporate Conflict",
@@ -78,10 +101,23 @@ export default function Blog() {
                 <div className="container max-w-md mx-auto subscribe-box">
                     <h2 className="heading-md mb-2">Never Miss an Insight</h2>
                     <p className="mb-3">Join our newsletter to receive exclusive strategies and updates directly in your inbox.</p>
-                    <form className="subscribe-form" onSubmit={(e) => e.preventDefault()}>
-                        <input type="email" placeholder="Enter your email address" className="form-input" required />
-                        <button type="submit" className="btn btn-primary">Subscribe</button>
-                    </form>
+                    {isSubscribed ? (
+                        <div className="submission-success text-center">
+                            <span className="icon text-primary font-bold">✓</span> <span className="text-white">Thanks for subscribing!</span>
+                        </div>
+                    ) : (
+                        <form className="subscribe-form" onSubmit={handleSubscribe}>
+                            <input
+                                type="email"
+                                placeholder="Enter your email address"
+                                className="form-input"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                            <button type="submit" className="btn btn-primary">Subscribe</button>
+                        </form>
+                    )}
                 </div>
             </section>
         </>

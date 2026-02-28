@@ -17,11 +17,30 @@ export default function Contact() {
         message: ''
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSubmitted(true);
-        // In a real app, this would send data to an API
-        console.log('Form submitted:', formData);
+        try {
+            const response = await fetch('https://formspree.io/f/mvzbnppy', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            if (response.ok) {
+                setIsSubmitted(true);
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    inquiry: '',
+                    message: ''
+                });
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
