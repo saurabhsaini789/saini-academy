@@ -33,7 +33,7 @@ export default function About() {
                         <div className="journey-images">
                             <div className="image-wrapper main-img">
                                 <Image
-                                    src="/images/Consulting Mode - 1.png"
+                                    src="/saini-academy/images/Consulting Mode - 1.png"
                                     alt="Performance and Learning Academy Consulting"
                                     width={600}
                                     height={800}
@@ -83,13 +83,13 @@ export default function About() {
                     <h2 className="heading-md mb-3 text-white">The Expert Behind the Academy</h2>
                     <div className="gallery-grid">
                         <div className="gallery-item">
-                            <Image src="/images/Speaker-Educator Mode - 1.png" alt="Speaker Mode" layout="fill" objectFit="cover" />
+                            <Image src="/saini-academy/images/Speaker-Educator Mode - 1.png" alt="Speaker Mode" layout="fill" objectFit="cover" />
                         </div>
                         <div className="gallery-item">
-                            <Image src="/images/Thought Leader Portrait - 1.png" alt="Thought Leader" layout="fill" objectFit="cover" />
+                            <Image src="/saini-academy/images/Thought Leader Portrait - 1.png" alt="Thought Leader" layout="fill" objectFit="cover" />
                         </div>
                         <div className="gallery-item">
-                            <Image src="/images/Black and white executive portrait - 1.png" alt="Executive" layout="fill" objectFit="cover" />
+                            <Image src="/saini-academy/images/Black and white executive portrait - 1.png" alt="Executive" layout="fill" objectFit="cover" />
                         </div>
                     </div>
                     <div className="mt-3">
